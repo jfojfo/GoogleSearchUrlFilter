@@ -1,0 +1,14 @@
+{
+    "name": "Google Search Result URL Filter",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Google Search Result URL Filter",
+    "content_scripts": [
+        {
+            "matches": ["http://www.google.com.hk/search*", "https://www.google.com.hk/search*"],
+            "js": ["jquery-1.7.1.min.js", "main.js"],
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ]
+}
